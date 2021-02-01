@@ -1,0 +1,340 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+html
+{
+    /* Primary */
+   --dark-blue:  hsl(238, 29%, 16%);
+   --red: hsl(14, 88%, 65%);
+
+   /* Background Gradient */
+   --violet: hsl(273, 75%, 66%);
+   --soft-blue: hsl(240, 73%, 65%);
+
+   /* Text Colors */
+   --very-dark-gray-blue: hsl(237, 12%, 33%);
+   --dark-gray-blue: hsl(240, 6%, 50%);
+
+   /* Dividers */
+   --lt-gray-blue: hsl(240, 5%, 91%);
+
+   /* Font */
+   font-size: 12px;
+   font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*  Page Elements */
+
+body
+{
+    background-image: linear-gradient(180deg, var(--violet), var(--soft-blue));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.container
+{
+    border-radius: 50px;
+    border: none;
+    box-shadow: 4px 8px 20px;
+    background-color: white;
+    margin: 5vh 7.5vw 10vh;
+}
+
+.collapsible
+{
+    background-color: white;
+    color: var(--dark-gray-blue);
+    cursor: pointer;
+    padding: 10%;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: 400;
+}
+
+
+.active
+{
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--very-dark-gray-blue);
+}
+
+.collapsible:hover
+{
+cursor: pointer;
+color: var(--red);
+}
+
+.content
+{
+    padding: 0 5%;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+.questions
+{
+    padding-bottom: 15%;
+}
+
+button
+{
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+hr
+{
+    background-color: var(--lt-gray-blue);
+    height: 1px;
+    border: none;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+/* Fonts */
+
+h1
+{
+    font-size: 3.5em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+p
+{
+    font-size: 1.3em;
+    text-align: left;
+    margin-left: 5%;
+    color: var(--dark-gray-blue);
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+/* Images */
+
+.hero-image
+{
+    background-image: url(./illustration-woman-online-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 30vh;
+    position: relative;
+    right: 5%;
+    bottom: 16.5vh;
+    margin-bottom: -10vh;
+}
+
+
+.arrow-up
+{
+    transform: rotate(180deg);
+    transition: transform 1s linear;
+}
+
+.arrow-down
+{
+    transform: rotate(0deg);
+    transition: transform 1s linear;
+    position: absolute;
+    right: 14%;
+    width: 3%;
+}
+
+.second-element
+{
+    background-image: url(./bg-pattern-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40vw;
+    height: 20vh;
+    right: -23%;
+    top: 21vh;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Desktop */
+
+
+@media (min-width: 1025px) {
+
+
+
+
+    body
+    {
+        background-image: linear-gradient(180deg, var(--violet), var(--soft-blue));
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: auto;
+        height: 100vh;
+        overflow-y: hidden;
+        margin-bottom: 0;
+    }
+    
+    .container
+    {
+        border-radius: 50px;
+        border: none;
+        box-shadow: 4px 8px 20px;
+        background-color: white;
+        height: 67.5vh;
+        width: 62vw;
+        margin-left: 20.5vw;
+        margin-top: -16.25vh;
+        overflow: hidden;
+    }
+    
+    .collapsible
+    {
+        background-color: white;
+        color: var(--dark-gray-blue);
+        padding: 3%;
+        width: 92%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+    .collapsible:hover
+    {
+        cursor: pointer;
+        color: var(--red);
+    }
+    
+    .active
+    {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--very-dark-gray-blue);
+    }
+    
+    .content
+    {
+        display: none;
+        overflow: hidden;
+        background-color: white;
+    }
+    
+    .questions
+    {
+        padding-bottom: 15%;
+        justify-content: right;
+        text-align: right;
+        margin-left: 45%;
+        margin-top: -22%;
+    }
+    
+    button
+    {
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+    
+    hr
+    {
+        background-color: var(--lt-gray-blue);
+        height: 1px;
+        border: none;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10%;
+    }
+    
+    /* Fonts */
+    
+    h1
+    {
+        font-size: 3em;
+        justify-content: right;
+        align-items: center;
+        text-align: center;
+        margin-bottom: -10px;
+        margin-left: 10%;
+        position: relative;
+        bottom: 40%;
+    }
+    
+    p
+    {
+        font-size: 1.2em;
+        text-align: left;
+        margin-left: 6.7%;
+        color: var(--dark-gray-blue);
+        width: 78%;
+        margin-bottom: 10px;
+    }
+    
+    
+    /* Images */
+    
+    .hero-image
+    {
+        background-image: url(./illustration-woman-online-desktop.svg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 48vh;
+        position: relative;
+        left: -10%;
+        top: 10vh;
+    }
+    
+    
+    .arrow-up
+    {
+        transform: rotate(180deg);
+        transition: transform 1s linear;
+    }
+    
+    .arrow-down
+    {
+        transform: rotate(0deg);
+        transition: transform 1s linear;
+        position: absolute;
+        right: 25%;
+        width: 0.6%;
+    }
+
+    .second-element
+    {
+        background-image: url(./illustration-box-desktop.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 10%;
+        height: 35%;
+        right: -15.6%;
+        top: 40%;
+        position: relative;
+        z-index: 2;
+    }
+
+}
